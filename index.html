@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="stylesheet" href="style.css">
+	<script>
+	
+	</script>
+</head>
+
+<body>
+	<h3>Drag the image, text or icon into the rectangle Below:</h3>
+	<div id="getData" class="container2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+	<br>
+	<div class="container1">
+		<div class="image">
+			<img id="dragData1" src="https://img.freepik.com/free-photo/fun-cartoon-kid-with-rain-gear_183364-81176.jpg" width="150" height="150" draggable="true" ondragstart="drag(event)" width="250" height="200">
+		</div>
+		<div class="image">
+			<img id="dragData2" src="https://videohive.img.customer.envatousercontent.com/files/7e2bdf48-6551-4682-85da-5f2242632378/inline_image_preview.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=d7469b67c7f3a4c256d84bc4895014ea" width="150" height="150" draggable="true" ondragstart="drag(event)" width="250" height="200">
+		</div>
+		<div class="text">
+			<span id="dragData3" draggable="true" ondragstart="drag(event)">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+		</div>
+        <div class="icon">
+            <i id="dragData4" draggable="true" ondragstart="drag(event)" class="fas fa-star"></i>
+        </div>
+	</div>
+
+	<div id="successMessage" class="success-message" style="display: none;">Item dropped successfully!</div>
+
+	<button id="resetButton" class="reset-button">Reset</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
